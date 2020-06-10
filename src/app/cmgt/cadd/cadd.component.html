@@ -1,0 +1,65 @@
+<div class="container">
+
+    <div class="row">
+      <form [formGroup]="formGroup" class="form">
+      <!-- ID -->
+        <mat-form-field  appearance="fill" hidden="hidden">
+          <div class="col-md-3">
+            ID
+          </div>
+          <div class="col-md-5">
+            <input matInput formControlName="cust_id"  >
+          </div>
+          <div class="col-md-4"></div>
+        </mat-form-field>
+
+        <!-- FM -->
+        <mat-form-field appearance="fill">
+          <div class="col-md-3">
+            First Name
+          </div>
+          <div class="col-md-5">
+            <input matInput formControlName="firstName"   >
+          </div>
+          <div class="col-md-4"></div>
+        </mat-form-field>
+
+        <!-- LM -->
+        <mat-form-field appearance="fill">
+          <div class="col-md-3">
+            Last Name
+          </div>
+          <div class="col-md-5">
+            <input matInput formControlName="lastName"   >
+          </div>
+          <div class="col-md-4"></div>
+        </mat-form-field>
+
+        <!-- LM -->
+        <mat-form-field appearance="fill">
+          <div class="col-md-3">
+            <mat-label> Contact</mat-label>
+          </div>
+          <div class="col-md-5">
+            <input matInput  formControlName="contact"    >
+          </div>
+          <div class="col-md-4"></div>
+        </mat-form-field>
+
+        <!-- ADD -->
+        <mat-form-field appearance="fill">
+          <div class="col-md-3">
+            <mat-label>Address </mat-label>
+          </div>
+          <div class="col-md-5">
+            <input matInput  formControlName="address"    >
+          </div>
+          <div class="col-md-4"></div>
+        </mat-form-field>
+  </form>
+  <button type="submit" class="button" (click)="onAdd(formGroup.value) ">Save</button>
+  </div>
+</div>
+
+
+
